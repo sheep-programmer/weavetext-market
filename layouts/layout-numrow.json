@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "kind": "layout",
+  "id": "numrow",
+  "extends": "fresh",
+  "order": 7,
+  "name": "数字行",
+  "description": "字母上方多一行数字键，常输数字时不用切换；键盘略高，行高均分",
+  "theme": "fresh",
+  "geometry": { "gapV": 8, "rowScale": 1.14 },
+  "qwerty": {
+    "rows": [
+      ["1234567890"],
+      ["qwertyuiop"],
+      ["asdfghjkl"],
+      ["shift:1.42", "gap:0.08", "zxcvbnm", "gap:0.08", "delete:1.42"],
+      ["symbol:1.42", "number:1.42", "comma", "space:2.32", "period", "lang:1.42", "enter:1.42"]
+    ],
+    "showHints": false
+  }
+}

@@ -1,0 +1,24 @@
+id: org.weavetext.speech.http-pcm
+name: 通用 HTTP 语音
+description: 将录音交给你配置的 PCM JSON 接口；需要自己的兼容服务，不包含识别模型
+version: 1.0.0
+type: speech
+entry: main.lua
+icon: 语
+network:
+  hosts: []
+  allowCustomHosts: true
+configSchema:
+  - key: endpoint
+    type: text
+    label: HTTPS 识别接口
+    defaultValue: ""
+    required: true
+  - key: token
+    type: password
+    label: Bearer 令牌（可选）
+    defaultValue: ""
+  - key: language
+    type: text
+    label: 语言
+    defaultValue: zh-CN
